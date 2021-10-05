@@ -1,0 +1,95 @@
+section {
+  background-image: url(../images/bg1.svg);
+  background-size: cover;
+
+}
+
+header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    height: 3rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  & .card {
+    width: 30rem;
+    height: 100%;
+  }
+}
+
+form{
+    width: 100%;
+}
+
+label,
+input {
+  display: block;
+  color: $grey;
+}
+
+label:nth-child(1) {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  width: 100%;
+  height: 2.8rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+
+  &.margin{
+      margin-bottom: 2rem;
+  }
+
+  &.border {
+    border-bottom: 0.1rem solid $grey;
+  }
+}
+
+.button{
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: .2rem;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & h4{
+        margin-inline-start: 0.5rem;
+    }
+}
+
+
+@import './animation';
