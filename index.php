@@ -13,21 +13,20 @@
 
 <body>
     <div class="content">
-        <main>
-
+        <main class="area-a display-f align-f">
             <div class="card">
-                <header>
-                    <img src="./images/logo.svg" alt="logo">
+                <header class="display-f">
+                    <img class="img-h" src="./images/logo.svg" alt="logo">
                 </header>
-                <div class="flex">
+                <div class="display-f align-f flex">
                     <form action="./login.php" method="post">
-                        <label class="margin">Enter account</label>
+                        <label class="title margin">Enter account</label>
                         <label>Username</label>
                         <input class="border margin" type="text" name="login-hero" id="login-hero">
                         <label>Password</label>
                         <input class="border" type="password" name="pass-hero" id="pass-hero">
-                        <input class="button" type="submit" value="Entrar">
-                        <div class="flex1">
+                        <input class="button black" type="submit" value="Entrar">
+                        <div class="display-f align-f">
                             <p>Don't have an account?</p>
                             <h4>Create here</h4>
                         </div>
@@ -35,7 +34,7 @@
                 </div>
             </div>
         </main>
-        <section class="animate"></section>
+        <section class="area-b bg animate"></section>
     </div>
 </body>
 

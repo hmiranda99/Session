@@ -1,24 +1,19 @@
-section {
+.bg {
   background-image: url(../images/bg1.svg);
   background-size: cover;
-
 }
 
-header{
-    width: 100%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
+header {
+  width: 100%;
+  height: 8rem;
+  align-items: center;
 }
 
-img{
-    height: 3rem;
+.img-h {
+  height: 3rem;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 
   & .card {
@@ -27,8 +22,8 @@ main {
   }
 }
 
-form{
-    width: 100%;
+form {
+  width: 100%;
 }
 
 label,
@@ -37,7 +32,7 @@ input {
   color: $grey;
 }
 
-label:nth-child(1) {
+.title {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
@@ -56,8 +51,8 @@ input {
   margin-bottom: 0.8rem;
   outline: none;
 
-  &.margin{
-      margin-bottom: 2rem;
+  &.margin {
+    margin-bottom: 2rem;
   }
 
   &.border {
@@ -65,31 +60,30 @@ input {
   }
 }
 
-.button{
-    background-color: black;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    border-radius: .2rem;
+.button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $white;
+  border-radius: 0.2rem;
+  transition: 800ms all;
 }
 
-.flex{
-    display: flex;
-    width: 100%;
-    height: 75vh;
-    justify-content: center;
-    align-items: center;
+.black {
+  background-color: $black;
+  transition: 800ms all;
+
+  &:hover{
+    background-color: $grey;
+  }
 }
 
-.flex1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    & h4{
-        margin-inline-start: 0.5rem;
-    }
+.flex {
+  width: 100%;
+  height: 75vh;
 }
 
+h4 {
+  margin-inline-start: 0.5rem;
+}
 
-@import './animation';
+@import "./animation";

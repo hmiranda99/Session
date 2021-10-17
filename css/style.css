@@ -5,7 +5,7 @@
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html,
@@ -19,19 +19,42 @@ body {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-      grid-template-areas: 'a b';
+      grid-template-areas: "a b";
   height: 100vh;
 }
 
-.content main {
-  grid-area: 'a';
+.content .area-a {
+  grid-area: "a";
 }
 
-.content main section {
-  grid-area: 'b';
+.content .area-b {
+  grid-area: "b";
 }
 
-section {
+.display-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-f {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.position-r {
+  position: relative;
+}
+
+.bg {
   background-image: url(../images/bg1.svg);
   background-size: cover;
 }
@@ -39,28 +62,16 @@ section {
 header {
   width: 100%;
   height: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-img {
+.img-h {
   height: 3rem;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
 }
 
@@ -79,7 +90,7 @@ input {
   color: #303030;
 }
 
-label:nth-child(1) {
+.title {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
@@ -108,40 +119,30 @@ input.border {
 }
 
 .button {
-  background-color: black;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
-  border-radius: .2rem;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  -webkit-transition: 800ms all;
+  transition: 800ms all;
+}
+
+.black {
+  background-color: #000000;
+  -webkit-transition: 800ms all;
+  transition: 800ms all;
+}
+
+.black:hover {
+  background-color: #303030;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 75vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.flex1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex1 h4 {
+h4 {
   -webkit-margin-start: 0.5rem;
           margin-inline-start: 0.5rem;
 }
@@ -173,5 +174,79 @@ input.border {
   100% {
     background-position: 100% 100%;
   }
+}
+
+.animate-top {
+  -webkit-animation: bounceInDown 2s ease;
+          animation: bounceInDown 2s ease;
+}
+
+.animate-rigth {
+  -webkit-animation: bounceInRight 2s ease;
+          animation: bounceInRight 2s ease;
+}
+
+.animate-bottom {
+  -webkit-animation: bounceInUp 2s ease;
+          animation: bounceInUp 2s ease;
+}
+
+.animate-left {
+  -webkit-animation: bounceInLeft 2s ease;
+          animation: bounceInLeft 2s ease;
+}
+
+/* .bg2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg6.svg);
+  background-size: cover;
+}*/
+.bg2 {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg2 .top {
+  top: -3rem;
+  width: 80vw;
+}
+
+.bg2 .rigth {
+  right: 0rem;
+  height: 100vh;
+}
+
+.bg2 .bottom {
+  bottom: -4rem;
+  width: 80vw;
+}
+
+.bg2 .left {
+  left: 0;
+  height: 100vh;
+}
+
+.card2 {
+  width: 30rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+}
+
+.button-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.2rem;
+}
+
+.over {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

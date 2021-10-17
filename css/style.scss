@@ -1,36 +1,53 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html,
-body{
-    width: 100%;
-    height: 100vh;
+body {
+  width: 100%;
+  height: 100vh;
 }
 
-.content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:'a b';
-    height: 100vh;
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "a b";
+  height: 100vh;
 
-    & main{
-        grid-area: 'a';
+  & .area-a {
+    grid-area: "a";
+  }
 
-        & section{
-            grid-area: 'b';
-        }
-    }
+  & .area-b {
+    grid-area: "b";
+  }
+}
+
+.display-f {
+  display: flex;
+}
+
+.align-f {
+  justify-content: center;
+  align-items: center;
+}
+
+.position-a{
+  position: absolute;
+}
+
+.position-r{
+  position: relative;
 }
 
 $grey: #303030;
+$white: #ffffff;
+$black: #000000;
 
-@import './parameters';
-
-
-
+@import "./parameters";
+@import "./area-style";
