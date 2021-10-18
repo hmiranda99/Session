@@ -14,7 +14,7 @@
     //require : usa-se com POO, ele usa e volta, não faz o cod fazer parte da página
     //include : ele incluí na página
     //include_once : ele incluí na página, mas, não repete o cod
-    include_once("./sentinela.php");
+    include_once("../sentinela.php");
     ?>
     <main class="over display-f align-f">
         <div class="bg2 position-r display-f">

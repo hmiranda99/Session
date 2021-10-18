@@ -1,4 +1,6 @@
 <?php
+    header("Location: ./index.php");
+    //levar o usuário para fora do site ^
     session_start();
     //sempre inicie uma sessão ^
     unset($_SESSION['login-on']);
@@ -6,6 +8,4 @@
     //limpando as variáveis de sessão ^
     session_destroy();
     //destruindo a sessão ^
-    header("Location: ./index.php");
-    //levar o usuário para fora do site ^
 ?>
