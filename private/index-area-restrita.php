@@ -26,7 +26,7 @@
         <div class="card2 position-a">
             <label class="title">Welcome!</label>
             <a href="../logout.php">
-                <input class="button-link orange" type="button" value="Sair">
+                <input class="button-link orange" type="button" value="Get out">
             </a>
         </div>
     </main>
