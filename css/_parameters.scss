@@ -37,6 +37,7 @@ input {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 label {
@@ -72,17 +73,17 @@ input {
   background-color: $black;
   transition: 800ms all;
 
-  &:hover{
+  &:hover {
     background-color: $grey;
     cursor: pointer;
   }
 }
 
-.orange{
-  background-color: #FF5B02;
+.orange {
+  background-color: #ff5b02;
   transition: 800ms all;
 
-  &:hover{
+  &:hover {
     background-color: $grey;
     color: $white;
     cursor: pointer;
@@ -96,6 +97,21 @@ input {
 
 h4 {
   margin-inline-start: 0.5rem;
+}
+
+.warning {
+  width: 100%;
+  height: 2rem;
+  border: 0.1rem solid red;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 0, 0, 0.164);
+  color: red;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+.m{
+  margin-right: 0.4rem;
 }
 
 @import "./animation";
