@@ -20,13 +20,13 @@
         <div class="bg2 position-r display-f">
             <img class="top position-a animate-top" src="../images/top.svg" alt="">
             <img class="rigth position-a animate-rigth" src="../images/rigth.svg" alt="">
-            <img class="bottom position-a animate-bottom" src="../images/bottom.svg" alt="">
             <img class="left position-a animate-left" src="../images/left.svg" alt="">
+            <img class="bottom position-a animate-bottom" src="../images/bottom.svg" alt="">
         </div>
         <div class="card2 position-a">
             <label class="title">Welcome!</label>
             <a href="../logout.php">
-                <input class="button-link black" type="button" value="Sair">
+                <input class="button-link orange" type="button" value="Sair">
             </a>
         </div>
     </main>

@@ -74,6 +74,18 @@ input {
 
   &:hover{
     background-color: $grey;
+    cursor: pointer;
+  }
+}
+
+.orange{
+  background-color: #FF5B02;
+  transition: 800ms all;
+
+  &:hover{
+    background-color: $grey;
+    color: $white;
+    cursor: pointer;
   }
 }
 

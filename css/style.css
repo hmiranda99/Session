@@ -135,6 +135,19 @@ input.border {
 
 .black:hover {
   background-color: #303030;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: #FF5B02;
+  -webkit-transition: 800ms all;
+  transition: 800ms all;
+}
+
+.orange:hover {
+  background-color: #303030;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .flex {
@@ -242,7 +255,7 @@ h4 {
 .button-link {
   font-size: 1rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   border-radius: 0.2rem;
 }
 
